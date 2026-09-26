@@ -555,6 +555,20 @@ footer .motto {
     gap: 16px;
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (min-width: 769px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+}
+
 .service-card {
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 14px;
@@ -1019,9 +1033,4 @@ footer .motto {
     .scroll-hint .mouse::after {
         background: #7a7a82;
     }
-}
-.services-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
 }
